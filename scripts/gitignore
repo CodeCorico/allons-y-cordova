@@ -1,0 +1,7 @@
+*/hooks/README.md
+*/www/
+*/platforms/
+*/plugins/
+*/*.DS_Store
+*/*.log
+*/*.db
