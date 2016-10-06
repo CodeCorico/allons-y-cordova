@@ -1,13 +1,13 @@
 'use strict';
 
 module.exports = {
-  bootstrap: function($allonsy, $options, $done) {
+  bootstrap: function($glob, $options, $done) {
     if ((process.env.CORDOVA && process.env.CORDOVA == 'false') || $options.owner != 'gulp') {
       return $done();
     }
 
     var $gulp = DependencyInjection.injector.controller.get('$gulp'),
-        apps = $allonsy.glob.sync('apps/*/');
+        apps = $glob.sync('apps/*/');
 
     apps.forEach(function(app) {
       app = app
