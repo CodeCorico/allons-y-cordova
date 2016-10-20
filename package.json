@@ -1,26 +1,24 @@
 {
   "name": "allons-y-cordova",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.0",
+  "description": "Distribute files to Cordova apps.",
+  "license": "MIT",
+  "homepage": "http://allons-y.io",
+  "author": "CodeCorico <hello@codecorico.com>",
+  "bugs": "https://github.com/CodeCorico/allons-y-cordova/issues",
   "repository": {
     "type": "git",
     "url": "https://github.com/CodeCorico/allons-y-cordova.git"
   },
-  "scripts": {
-    "postinstall": "node scripts/postinstall.js"
-  },
-  "author": "CodeCorico <hello@codecorico.com>",
-  "bugs": {
-    "url": "https://github.com/CodeCorico/allons-y-cordova/issues"
-  },
-  "homepage": "https://github.com/CodeCorico/allons-y-cordova",
   "engines": {
     "node": ">=4.1",
     "npm": ">=3.2"
   },
-  "license": "MIT",
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js"
+  },
   "dependencies": {
+    "allons-y-gulp": "^1.0.0",
     "fs-extra": "^0.30.0"
   }
 }
