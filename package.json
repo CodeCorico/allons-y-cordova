@@ -15,10 +15,14 @@
     "npm": ">=3.2"
   },
   "scripts": {
-    "postinstall": "node scripts/postinstall.js"
+    "postinstall": "node scripts/postinstall.js",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "allons-y-gulp": "^1.0.0",
-    "fs-extra": "^0.30.0"
-  }
+    "fs-extra": "^0.30.0",
+    "snyk": "^1.104.2"
+  },
+  "snyk": true
 }
